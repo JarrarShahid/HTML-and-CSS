@@ -1,0 +1,32 @@
+a:link{
+    color: pink;
+}
+a:visited{
+color: blue;
+}
+a:hover{
+color: purple;
+}
+a{
+float: left;
+font-size: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: bold;
+margin-left: 25px;
+}
+
+#ps{
+  padding-top:50px;
+  text-align: justify;
+  font-size:large;   
+}
+.img2{
+    height:500px;
+    width:500px;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: crimson;
+}
