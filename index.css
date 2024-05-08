@@ -1,0 +1,279 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background-color: #064f88;
+}
+
+.nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-left: 650px;
+    list-style-type: none;
+}
+
+.nav ul li {
+    margin-left: 10px;
+    padding-left: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.nave {
+    margin-left: -550px;
+    /* Use margin-left instead of padding-left */
+}
+
+
+.nav ul li a:hover {
+    color: yellow;
+}
+
+.nave ul li {
+    margin-left: 10px;
+    padding-left: 30px;
+    font-size: 13px;
+}
+
+.nav2 {
+    background-color: #34495E;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+.nav2  a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    background-image: url('Img/czlogo.png');
+    height: 50px;
+    width: 300px;
+    background-repeat: no-repeat;
+    margin-left: 690px;
+}
+
+.nav2  input[type="text"] {
+    width: 280px;
+    padding: 8px;
+    margin-left: 200px;
+}
+
+/* Styling for the category box */
+.nav2  select {
+    width: 280px;
+    height: 44px;
+    padding: 8px;
+    margin: 0px;
+}
+
+/* Common styling for search and cart icons */
+a.search-icon,
+a.cart {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    height: 43px;
+}
+
+/* Unique styling for search icon */
+a.search-icon {
+    line-height: 3px;
+    background-color: yellow;
+    height: 43px;
+}
+
+a.search-icon i {
+    font-size: 18px;
+    padding: 8px;
+    margin-top: 0px;
+    display: inline-block;
+    line-height: 1;
+}
+
+/* Unique styling for cart icon */
+a.cart {
+    line-height: 3px; /* Adjust if needed */
+}
+
+a.cart i {
+    font-size: 26px;
+    padding: 8px;
+    margin-top: 0px;
+    display: inline-block;
+    line-height: 1;
+}
+
+
+.nav3 {
+    top: 0px;
+    position: sticky;
+    background-color: #022E4C;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav3 ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 610px;
+}
+
+.nav3 ul li a {
+    color: white;
+    text-decoration: none;
+    padding-left: 50px;
+    font-size: 18px;
+    
+}
+
+.nav3 ul li select {
+    background-color: #022E4C;
+    color: white;
+}
+
+/* Optional CSS styles for better appearance */
+#carouselExample {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.carousel-inner img {
+    border-radius: 10px;
+}
+
+.content-container {
+    padding-top: 20px;
+}
+
+.fp{
+    background-color: #e7e7e7;
+    width: 1200px;
+    margin-left: 680px;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+.fpi{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1300px;
+    margin-left: 650px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 18rem;
+    margin-bottom: 20px; /* Added margin to the bottom of each card */
+}
+
+
+
+.footer1 {
+    background-color: #022E4C;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer1 i {
+    font-size: 60px;
+    margin-left: 680px; /* Adjusted margin */
+}
+
+.vertical-line {
+    border-left: 5px solid #000;
+    height: 70px;
+    margin: 0 20px; /* Adjusted margin */
+}
+
+.hc-container {
+    margin-left: 10px;
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+.hc {
+    color: white;
+    font-size: 20px;
+}
+
+.ic i {
+    margin-left: 30px;
+}
+
+.input-group {
+    margin-left: 200px;
+}
+
+
+.footer2{
+background-color: #34495E;
+height: 250px;
+display: flex;
+justify-content: center;
+}
+
+.footer2 ul{
+margin-left: 0px;
+}
+
+
+
+.footer2 ul li{
+    color: white;
+    list-style-type: none;
+   
+
+}
+
+
+.footer2 ul li a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.footer2 ul li a:hover{
+    color: yellow;
+}
+
+.foot3{
+    background-color: #064f88;
+    height: 50px;
+    display: flex;
+
+}
+
+.f3b{
+    margin-left: 630px;
+    color: white;
+}
+
+.f3e{
+    margin-left: 500px;
+    color: white;
+}
