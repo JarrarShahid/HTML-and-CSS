@@ -1,279 +1,424 @@
+
 body {
     padding: 0;
     margin: 0;
 }
 
+/*nav bar start*/
+
+li {
+    /* Keep this rule if you have other lists outside the navigation bar */    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .nav {
+    position: sticky;
+    top: 0px;
+    height: 40px;
+    z-index: 1000; /* Ensures it stays above other content */
+    background-color: rgba(0, 0, 0, 0.856);
     display: flex;
+    justify-content: center;
     align-items: center;
-    height: 30px;
-    background-color: #064f88;
 }
 
 .nav ul {
-    display: flex;
     padding: 0;
     margin: 0;
-    margin-left: 650px;
     list-style-type: none;
+    display: flex; /* Set the ul to flex */
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
+    
 }
 
 .nav ul li {
-    margin-left: 10px;
-    padding-left: 30px;
+    margin-left: 40px; /* Adjust margin between items */
+    
 }
 
-.nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
-}
-
-.nave {
-    margin-left: -550px;
-    /* Use margin-left instead of padding-left */
-}
-
-
-.nav ul li a:hover {
-    color: yellow;
-}
-
-.nave ul li {
-    margin-left: 10px;
-    padding-left: 30px;
-    font-size: 13px;
-}
-
-.nav2 {
-    background-color: #34495E;
-    height: 70px;
-    width: 100%;
+.search-box {
     display: flex;
     align-items: center;
+    margin-left: auto; /* Push search box to the right */
+}
+
+.search-box form {
     display: flex;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+    align-items: center;
 }
 
-
-.nav2  a {
-    text-decoration: none;
-    color: white;
+.search-box input[type="text"] {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
 }
 
-.logo {
-    background-image: url('Img/czlogo.png');
-    height: 50px;
-    width: 300px;
-    background-repeat: no-repeat;
-    margin-left: 690px;
-}
-
-.nav2  input[type="text"] {
-    width: 280px;
-    padding: 8px;
-    margin-left: 200px;
-}
-
-/* Styling for the category box */
-.nav2  select {
-    width: 280px;
-    height: 44px;
-    padding: 8px;
-    margin: 0px;
-}
-
-/* Common styling for search and cart icons */
-a.search-icon,
-a.cart {
-    text-decoration: none;
+.search-box button {
+    padding: 6px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
     cursor: pointer;
-    display: inline-block;
-    height: 43px;
 }
 
-/* Unique styling for search icon */
-a.search-icon {
-    line-height: 3px;
-    background-color: yellow;
-    height: 43px;
-}
-
-a.search-icon i {
-    font-size: 18px;
-    padding: 8px;
-    margin-top: 0px;
-    display: inline-block;
-    line-height: 1;
-}
-
-/* Unique styling for cart icon */
-a.cart {
-    line-height: 3px; /* Adjust if needed */
-}
-
-a.cart i {
-    font-size: 26px;
-    padding: 8px;
-    margin-top: 0px;
-    display: inline-block;
-    line-height: 1;
-}
+/*nav bar start*/
 
 
-.nav3 {
-    top: 0px;
-    position: sticky;
-    background-color: #022E4C;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    z-index: 1000;
-}
-
-.nav3 ul {
-    display: flex;
-    list-style-type: none;
-    margin-left: 610px;
-}
-
-.nav3 ul li a {
+/* banner start 1 */ 
+.banner{
+    position: relative;
+    background-image: url('images/new\ banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 1050px;
     color: white;
-    text-decoration: none;
-    padding-left: 50px;
-    font-size: 18px;
+    text-align: center;
     
 }
 
-.nav3 ul li select {
-    background-color: #022E4C;
-    color: white;
-}
-
-/* Optional CSS styles for better appearance */
-#carouselExample {
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 0px;
-}
-
-.carousel-inner img {
-    border-radius: 10px;
-}
-
-.content-container {
-    padding-top: 20px;
-}
-
-.fp{
-    background-color: #e7e7e7;
-    width: 1200px;
-    margin-left: 680px;
-    padding: 10px;
-    margin-top: 10px;
-
-}
-
-.fpi{
-    display: flex;
-    flex-wrap: wrap;
-    width: 1300px;
-    margin-left: 650px;
-    margin-top: 20px;
-    justify-content: space-evenly;
-}
-
-.card {
-    width: 18rem;
-    margin-bottom: 20px; /* Added margin to the bottom of each card */
-}
-
-
-
-.footer1 {
-    background-color: #022E4C;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer1 i {
+.banner-text {
+    position: absolute;
+    bottom: 100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
     font-size: 60px;
-    margin-left: 680px; /* Adjusted margin */
+}
+.banner-text2 {
+    position: absolute;
+    bottom: 40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-size: 30px;
 }
 
-.vertical-line {
-    border-left: 5px solid #000;
-    height: 70px;
-    margin: 0 20px; /* Adjusted margin */
+.buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.hc-container {
-    margin-left: 10px;
-    white-space: nowrap; /* Prevent line breaks */
-}
-
-.hc {
-    color: white;
-    font-size: 20px;
-}
-
-.ic i {
-    margin-left: 30px;
-}
-
-.input-group {
-    margin-left: 200px;
-}
-
-
-.footer2{
-background-color: #34495E;
-height: 250px;
-display: flex;
-justify-content: center;
-}
-
-.footer2 ul{
-margin-left: 0px;
-}
-
-
-
-.footer2 ul li{
-    color: white;
-    list-style-type: none;
-   
-
-}
-
-
-.footer2 ul li a {
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
     text-decoration: none;
+    color:black;
+    background-color: white;
+    border-radius: 100px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: blue;
+}
+
+/*banner end 1 */
+
+/*banner start 2 */
+
+.banner2{
+    position: relative;
+    background-image: url('images/b2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    color: black;
+    text-align: center;
+    margin-top: 0px;
+    
+}
+.b-t{
+    position: absolute;
+    bottom: 100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-size: 60px;
+    color: black;
+}
+.b-t2{
+    position: absolute;
+    bottom: 40px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-size: 30px;
+    color: black;
+}
+.b-t3 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: blue;
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer; /* Optional: Add a pointer cursor on hover */
+}
+
+.b-t3:hover {
+    text-decoration: underline;
+}
+
+/*banner end 2 */
+
+/*banner start 3 */
+
+.banner3{
+    position: relative;
+    background-image: url('images/i15.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    color: black;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.b.ibtns {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ibtn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color:white;
+    background-color: black;
+    border-radius: 100px;
+    transition: background-color 0.3s ease;
+}
+
+.ibtn:hover {
+    background-color: blue;
+}
+
+.bt3{
+    color: black;
+}
+.bt-3{
+    color: black;
+}
+
+
+/*banner end 3 */
+
+
+/* row 1 start*/
+.row {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Place columns with space in between */
+}
+
+.column1,
+.column2 {
+    flex: 0 0 50%; /* Set each column to occupy 50% of the row width */
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Update background images for each column */
+.column1 {
+    background-image: url('images/i15p.jpg');
+}
+
+.column2 {
+    background-image: url('images/mbp.jpg');
+}
+.ra{
+    color: black;
+}
+.r-a{
+    color: black;
+}
+/* row 1 end*/
+
+/* row 2 start*/
+.row2 {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Place columns with space in between */
+}
+
+.column3,
+.column4 {
+    flex: 0 0 50%; /* Set each column to occupy 50% of the row width */
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Update background images for each column */
+.column3 {
+    background-image: url('images/w2.jpg');
+}
+
+.column4 {
+    background-image: url('images/cn.jpg');
+}
+.r2{
+    color: black;
+}
+.r-2{
+    color: black;
+}
+.rb{
+    color: black;
+    font-size: 60px;
+}
+.r-b{
+    color: white;
+    font-size: 35px;
+}
+
+/* row 2 end*/
+
+/* row 3 start*/
+.row3 {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Place columns with space in between */
+}
+
+.column5,
+.column6 {
+    flex: 0 0 50%; /* Set each column to occupy 50% of the row width */
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Update background images for each column */
+.column5 {
+    background-image: url('images/card.jpg');
+}
+
+.column6 {
+    background-image: url('images/trade.jpg');
+}
+.r3{
+    color: black;
+}
+.r-3{
+color: black;
+}
+.rc{
+    color: black;
+}
+.r-c{
+    color: black;
+}
+/* row 3 end*/
+
+/*last picture start*/
+.last{
+    position: relative;
+    background-image: url('images/ud.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+/*last picture end*/
+
+/*FP START*/
+.fp{
+    padding: 5px;
+    margin-left: 500px;
+    margin-right: 500px;
+    background-color: #f0f0f0;
+}
+
+/*FP END*/
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #f0f0f0;
+}
+
+.bottom ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bottom ul li {
+    margin-bottom: 10px; /* Adjust spacing between list items */
+}
+
+.bottom ul li:first-child {
+    font-weight: bold;
+    margin-bottom: 20px; /* Adjust spacing for the first list item */
+}
+
+.bottom ul li a {
+    color: black; /* Set the text color for anchor tags */
+    text-decoration: none;
+}
+.fn{
+    padding: 5px;
+}
+.fn a {
+    color: blue;
+    
+}
+footer {
+   /* text-align: center;*/
+    padding: 5px; /* Adjust as needed */
+    background-color: #f0f0f0; /* Example background color */
+}
+
+footer p {
+    margin: 0;
     
 }
 
-.footer2 ul li a:hover{
-    color: yellow;
+footer span {
+    margin: 0 5px; /* Adjust spacing between items */
+    
 }
 
-.foot3{
-    background-color: #064f88;
-    height: 50px;
-    display: flex;
-
+footer a {
+    color: black;
 }
-
-.f3b{
-    margin-left: 630px;
-    color: white;
-}
-
-.f3e{
-    margin-left: 500px;
-    color: white;
+.ug{
+    margin:0px;
+    padding: 0px;
+    background-color:#f0f0f0 ;
 }
